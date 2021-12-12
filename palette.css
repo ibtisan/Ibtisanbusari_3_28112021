@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'Shrikhand', cursive;
+    src: url(../fonts/Shrikhand-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto', sans-serif;    
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body
+{
+    font-family: "Roboto" ;
+}
+
+h1{
+    font-family: "Roboto" ;
+    font-size: 40px;
+    font-weight: 1000;
+ }
+
+.h1
+{
+    font-weight: 1000;
+    font-size: 18px;
+    font-weight: 1000;
+}
+h2
+{
+    font-family: "shrikhand" ;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+h3
+{
+    font-family: "Roboto" ;
+    font-size: 25px;
+    font-weight: 1000;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+h4
+{
+    font-family: "roboto" ;
+
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    }
+
+#logo
+{
+    display: flex;
+    justify-content: center;
+    flex: 20;
+    order: 2;
+}   
+
+#fleche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    order: 1;
+    font-size: 30px;
+}
+
+
+img{
+    border-radius: 0px;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    height:250px ;
+    object-fit: cover;
+}
+.heightimg{
+    width: 100%;
+    height:250px ;
+    object-fit: cover;
+}
+
+section{
+    margin-top: -40px;
+    background-color: #f2f2f2;
+}
+.palettecoeur{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.palettecoeur h1{
+    font-size:30px ;
+}
+
+.coeur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    background-color: transparent;
+    height: auto;
+    font-weight: 100;
+}
+
+
+
+
+#cursive{
+    font-family: "Shrikhand" ;
+}
+
+.bloc3meal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.texttype{
+    padding-left: 10px;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.choixentre{
+    
+    width: 100%;
+    animation: fadein 3s ease-in-out;
+
+}
+
+.choixplats{
+    
+    width: 100%;
+    animation: fadein 3s ease-in-out;
+    
+}
+
+.choixdessert{
+     
+    width: 100%;
+    height: auto;
+    animation: fadein 9s ease-in-out;
+}
+
+
+.mets{
+    border-radius: 15px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+}
+
+.mets:hover{
+    padding-right: 75px;
+}
+
+.mets:hover .okvert{
+    opacity: 1;
+    transform: translate(-50px);
+}
+
+.mets:hover .fa-check-circle{
+    transform: rotate(360deg);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+    padding-left: 0px;
+    background-color: white;
+}
+.text p{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 200;
+}
+.texttype{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: roboto-regular;
+
+}
+
+.ligne{
+    width: 40px;
+    border: 2px solid #99E2D0;
+    margin-left: 10px;
+}
+
+
+
+
+.okvert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 50px;
+    height: 63px;
+   border-top-right-radius: 15px;
+   position: absolute;
+   padding: 20px;
+   right: -50px;
+   top: 0;
+   opacity: 0;
+   transition: transform 330ms ease-in-out;
+    
+}
+
+.okvert .fa-check-circle{
+    color: white;
+    transition: transform 500ms ease-in-out;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #f2f2f2;
+    max-width: auto;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-left: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+.margecommande{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+@media screen and (min-width: 768px)  {
+
+    .bloc3meal{
+        display: flex;
+        justify-content: space-around ;
+        width: 100%;
+       
+    }
+    
+    .coeur:active{
+        color: #ff79da;
+        background-color: transparent ;
+        font-weight: 900;
+        transition: 3s
+        
+    }
+
+    
+}
